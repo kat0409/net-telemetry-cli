@@ -1,0 +1,12 @@
+[project]
+name = "net-telemetry-cli"
+version = "0.1.0"
+description = "Linux network telemetry CLI with retries/backoff, exit codes, and a simple test plan"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.scripts]
+net-telemetry = "nettelemetry.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
